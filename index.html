@@ -2,10 +2,6 @@
 <html>
 <head>
   <style>
-    body > h1:nth-of-type(1) {
-      cursor: pointer
-    }
-
     body {
       --title-bar-height: 42px;
       padding-top: var(--title-bar-height);
@@ -34,10 +30,10 @@
       margin-left: 12px;
     }
   </style>
-  <script type='module' src='./app.js'></script>
+  <script type='module' src='./main.js'></script>
 </head>
 <body>
   <div id="bar"><pear-ctrl></pear-ctrl></div>
-  <h1>desktop</h1>
+  <div id="root"></div>
 </body>
 </html>
