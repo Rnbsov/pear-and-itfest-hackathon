@@ -6,5 +6,7 @@ import App from './src/App'
 
 const { app } = await Pear.versions()
 
+if (Pear.config.key === null) Pear.updates(() => { location.reload() })
+
 const root = createRoot(document.querySelector('#root'))
 root.render(html` <${App} app="{app}" /> `)
